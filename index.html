@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Case</title>
+    <title>sample</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,6 +10,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <style>
+#container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  min-height: 400px;
+}
+    </style>
+    <link rel="stylesheet" href="slider.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="slider.js"></script>
 
 </head>
 
@@ -49,8 +60,27 @@
 
     <div class="parallax"></div>
 
-    <div id="para1" style="height:500px;background-color:grey;font-size:36px">
-<p class="ex1" style="color:black; font-size:20px;">Welcome</p>
+    <div id="para1" style="height:600px;background-color:grey;font-size:36px">
+        <p class="ex1" style="color:black; font-size:20px;">Welcome</p>
+        <br>
+        <div id="container">
+
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img src="thermometer.jpg" />
+                    </li>
+                    <li>
+                        <img src="building.jpg" />
+                    </li>
+                    <li>
+                        <img src="green-bottles.jpg" />
+                    </li>
+                </ul>
+                <button class="prev">prev</button>
+                <button class="next">next</button>
+            </div>
+        </div>
         <p>adgfdgsdafas</p>
     </div>
     <div class="parallax1">
@@ -68,22 +98,23 @@
         <p>adfdsfd</p>
 
         <div class="container">
-  <h2> form</h2>
-  <form>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+
+            <h2> form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
     </div>
 
 </body>
